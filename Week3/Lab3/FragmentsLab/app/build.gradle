@@ -1,0 +1,21 @@
+apply plugin: 'android'
+android {
+    compileSdkVersion 18
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+        minSdkVersion 13
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('/Users/sanych/Work/src/AndroidStudioProjects/Week3/Lab3/FragmentsLab/libs/robotium-solo-5.0.2-SNAPSHOT.jar')
+}
